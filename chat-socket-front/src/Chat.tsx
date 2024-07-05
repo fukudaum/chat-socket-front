@@ -19,6 +19,7 @@ const Chat: React.FC = () => {
 
   const sendMessage = () => {
     socket.emit('message', message);
+    console.log(message)
     setMessage('');
   };
 
